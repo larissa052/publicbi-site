@@ -1,117 +1,39 @@
-/* Estilo para a chamada para ação (CTA) */
-.cta-button {
-    display: inline-block;
-    background-color: #0077b6; /* Azul principal */
-    color: white; /* Texto branco para contraste */
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 18px;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    margin-top: 15px;
-}
-
-/* Efeito hover no CTA */
-.cta-button:hover {
-    background-color: #005f8e; /* Azul mais escuro no hover */
-    color: white; /* Mantém o texto branco */
-}
-
-
-/* Cabeçalho */
-header {
-    background-color: #003366;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Estilização da logo */
-header img {
-    display: block;
-    margin: 0 auto 10px;
-    width: 150px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-/* Menu de navegação */
-nav ul {
-    list-style: none;
-    padding: 0;
+/* Menu de navegação fixo */
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background: #002244;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
-nav ul li {
+.fixed-nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.fixed-nav ul li {
     display: inline;
-    margin: 10px;
+    margin: 0 15px;
 }
 
-nav a {
+.fixed-nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
 
-/* Efeito hover nos links do menu */
-nav a:hover {
+.fixed-nav a:hover {
     color: #ffd700;
 }
 
-/* Melhorando o espaçamento entre as seções */
-section {
-    margin: 30px auto;
-    padding: 30px;
-    max-width: 800px;
-    background: white;
-    border-radius: 8px;
-}
-
-/* Botão do formulário */
-button {
-    background-color: #0077b6;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease-in-out;
-}
-
-/* Efeito hover no botão */
-button:hover {
-    background-color: #005f8e;
-}
-
-/* Rodapé */
-footer {
-    background: #002244;
-    color: white;
-    padding: 10px;
-}
-
-/* 📱 Responsividade para telas menores que 768px */
-@media (max-width: 768px) {
-    nav ul {
-        padding: 0;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    header h1 {
-        font-size: 24px;
-    }
-
-    section {
-        padding: 15px;
-        margin: 15px;
-        width: 90%;
-    }
+/* Ajuste no body para não sobrepor o conteúdo */
+body {
+    padding-top: 50px; /* Para evitar que o menu fixe sobre o conteúdo */
 }

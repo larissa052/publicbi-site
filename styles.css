@@ -1,17 +1,28 @@
-/* ====== ESTILO GERAL ====== */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #f4f4f4;
+/* Estilo para a chamada para ação (CTA) */
+.cta-button {
+    display: inline-block;
+    background-color: #0077b6; /* Azul principal */
+    color: white; /* Texto branco para contraste */
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin-top: 15px;
 }
 
-/* ====== CABEÇALHO ====== */
+/* Efeito hover no CTA */
+.cta-button:hover {
+    background-color: #005f8e; /* Azul mais escuro no hover */
+    color: white; /* Mantém o texto branco */
+}
+
+/* Cabeçalho */
 header {
     background-color: #003366;
     color: white;
-    padding: 20px;
+    padding: 80px 20px 20px; /* Ajuste no padding-top para o menu fixo */
     text-align: center;
 }
 
@@ -23,117 +34,144 @@ header img {
     height: auto;
 }
 
-/* ====== MENU DE NAVEGAÇÃO FIXO ====== */
+/* Estilo para os itens da seção Sobre */
+.sobre-item {
+    display: flex;
+    align-items: flex-start; /* Alinha ícone e texto no topo */
+    margin-bottom: 30px; /* Espaçamento entre os itens */
+}
+
+.sobre-item i {
+    font-size: 32px; /* Tamanho do ícone */
+    color: #0077b6; /* Cor do ícone */
+    margin-right: 20px; /* Espaçamento entre ícone e texto */
+    flex-shrink: 0; /* Impede que o ícone diminua */
+}
+
+.sobre-item h3 {
+    margin-top: 0; /* Remove margem superior do título */
+    color: #003366; /* Cor do título */
+}
+
+.sobre-item p, .sobre-item ul {
+    margin: 10px 0 0; /* Ajusta margens do texto */
+    color: #333; /* Cor do texto */
+}
+
+.sobre-item ul {
+    list-style: none; /* Remove marcadores padrão */
+    padding-left: 0; /* Remove padding da lista */
+}
+
+.sobre-item ul li {
+    margin-bottom: 10px; /* Espaçamento entre itens da lista */
+}
+
+/* 🟦 Menu de navegação fixo no topo */
 nav {
-    position: fixed;
+    position: fixed; /* Mantém o menu fixo no topo */
     top: 0;
     left: 0;
     width: 100%;
-    background: #002244;
-    padding: 15px 0;
-    text-align: center;
+    background: #002244; /* Cor de fundo escura */
+    padding: 15px 0; /* Mais espaçamento interno */
+    text-align: center; /* Centraliza os links */
     z-index: 1000;
 }
 
+/* 🔹 Ajustando a lista do menu */
 nav ul {
-    list-style: none;
+    list-style: none; /* Remove os marcadores de lista */
     padding: 0;
     margin: 0;
 }
 
+/* 🔹 Links do menu */
 nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+    display: inline-block; /* Deixa os itens alinhados na horizontal */
+    margin: 0 15px; /* Adiciona espaçamento entre os itens */
 }
 
 nav a {
-    color: white;
+    color: white; /* Texto branco */
     font-size: 18px;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
 
+/* 🟡 Efeito hover nos links */
 nav a:hover {
-    color: #ffd700;
+    color: #ffd700; /* Amarelo dourado no hover */
 }
 
-/* ====== SEÇÃO DE CONTATO ====== */
 #contato {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 30px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Efeito de sombra */
     text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Efeito de sombra */
 }
 
-/* Estilização do formulário */
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centraliza os elementos */
 }
 
-/* Estilo dos Labels */
-form label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    text-align: left;
-    color: #003366;
-    width: 100%;
-}
-
-/* Campos do Formulário */
 form input, form textarea {
-    width: 100%;
     padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
     transition: 0.3s ease-in-out;
 }
 
-/* Efeito ao focar nos campos */
 form input:focus, form textarea:focus {
     border-color: #0077b6;
     box-shadow: 0px 0px 5px rgba(0, 119, 182, 0.5);
-    outline: none;
 }
 
-/* Botão do Formulário */
 form button {
-    background-color: #0077b6;
-    color: white;
     padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
     transition: background-color 0.3s ease-in-out, transform 0.2s;
-}
-
-/* Efeito hover e clique no botão */
-form button:hover {
-    background-color: #005f8e;
 }
 
 form button:active {
     transform: scale(0.98);
 }
+/* Melhorando o espaçamento entre as seções */
+section {
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+}
 
-/* ====== RODAPÉ ====== */
+/* Botão do formulário */
+button {
+    background-color: #0077b6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Efeito hover no botão */
+button:hover {
+    background-color: #005f8e;
+}
+
+/* Rodapé */
 footer {
     background: #002244;
     color: white;
     padding: 10px;
 }
 
-/* ====== RESPONSIVIDADE PARA TELAS MENORES QUE 768PX ====== */
+/* 📱 Responsividade para telas menores que 768px */
 @media (max-width: 768px) {
+    nav ul {
+        padding: 0;
+    }
+
     nav ul li {
         display: block;
         margin: 10px 0;

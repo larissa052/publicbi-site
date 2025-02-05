@@ -67,21 +67,50 @@ header img {
     margin-bottom: 10px; /* Espaçamento entre itens da lista */
 }
 
-/* Menu de navegação */
+/* 🟦 Menu de navegação fixo no topo */
 nav {
-    position: fixed; /* Fixa o menu no topo */
-    top: 0; /* Alinha o menu no topo da página */
-    width: 100%; /* Ocupa toda a largura da tela */
-    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
-    background: #002244; /* Cor de fundo do menu */
-    padding: 10px 0; /* Adiciona um pouco de espaço interno */
+    position: fixed; /* Mantém o menu fixo no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #002244; /* Cor de fundo escura */
+    padding: 15px 0; /* Mais espaçamento interno */
+    text-align: center; /* Centraliza os links */
+    z-index: 1000;
 }
+
+/* 🔹 Ajustando a lista do menu */
+nav ul {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0;
+    margin: 0;
+}
+
+/* 🔹 Links do menu */
+nav ul li {
+    display: inline-block; /* Deixa os itens alinhados na horizontal */
+    margin: 0 15px; /* Adiciona espaçamento entre os itens */
+}
+
+nav a {
+    color: white; /* Texto branco */
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+/* 🟡 Efeito hover nos links */
+nav a:hover {
+    color: #ffd700; /* Amarelo dourado no hover */
+}
+
 
 /* Melhorando o espaçamento entre as seções */
 section {
     margin: 30px auto;
     padding: 30px;
-    max-width: 800px;
+    max-width: 600px;
     background: white;
     border-radius: 8px;
 }

@@ -1,8 +1,8 @@
 /* Estilo para a chamada para ação (CTA) */
 .cta-button {
     display: inline-block;
-    background-color: #ffd700; /* Dourado */
-    color: #003366; /* Azul escuro */
+    background-color: #0077b6; /* Azul principal */
+    color: white; /* Texto branco para contraste */
     padding: 12px 25px;
     text-decoration: none;
     border-radius: 5px;
@@ -14,8 +14,8 @@
 
 /* Efeito hover no CTA */
 .cta-button:hover {
-    background-color: #e6b800; /* Dourado mais escuro no hover */
-    color: white; /* Mantém contraste ao passar o mouse */
+    background-color: #005f8e; /* Azul mais escuro no hover */
+    color: white; /* Mantém o texto branco */
 }
 
 

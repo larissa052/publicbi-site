@@ -1,12 +1,23 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #f4f4f4;
+/* Estilo para a chamada para ação (CTA) */
+.cta-button {
+    display: inline-block;
+    background-color: #ffd700; /* Dourado */
+    color: #003366; /* Azul escuro */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 15px;
 }
 
-/* Cabeçalho com logo */
+/* Efeito hover no CTA */
+.cta-button:hover {
+    background-color: #e6b800; /* Dourado mais escuro no hover */
+}
+
+/* Cabeçalho */
 header {
     background-color: #003366;
     color: white;
@@ -17,7 +28,7 @@ header {
 /* Estilização da logo */
 header img {
     display: block;
-    margin: 0 auto 10px; /* Centraliza a logo e adiciona um espaçamento abaixo */
+    margin: 0 auto 10px;
 }
 
 /* Menu de navegação */
@@ -41,7 +52,7 @@ nav a {
 
 /* Efeito hover nos links do menu */
 nav a:hover {
-    color: #ffd700; /* Dourado ao passar o mouse */
+    color: #ffd700;
 }
 
 /* Melhorando o espaçamento entre as seções */
@@ -53,7 +64,7 @@ section {
     border-radius: 8px;
 }
 
-/* Botão estilizado */
+/* Botão do formulário */
 button {
     background-color: #0077b6;
     color: white;

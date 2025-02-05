@@ -6,11 +6,18 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Cabeçalho com azul escuro */
+/* Cabeçalho com logo */
 header {
     background-color: #003366;
     color: white;
     padding: 20px;
+    text-align: center;
+}
+
+/* Estilização da logo */
+header img {
+    display: block;
+    margin: 0 auto 10px; /* Centraliza a logo e adiciona um espaçamento abaixo */
 }
 
 /* Menu de navegação */
@@ -48,7 +55,7 @@ section {
 
 /* Botão estilizado */
 button {
-    background-color: #0077b6; /* Azul vibrante */
+    background-color: #0077b6;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -61,7 +68,7 @@ button {
 
 /* Efeito hover no botão */
 button:hover {
-    background-color: #005f8e; /* Azul mais escuro no hover */
+    background-color: #005f8e;
 }
 
 /* Rodapé */

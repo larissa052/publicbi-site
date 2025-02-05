@@ -31,7 +31,7 @@ header img {
     height: auto;
 }
 /* Estilo para o slogan */
-.slogan {
+header p.slogan {
     color: white; /* Cor branca para o texto */
     font-size: 18px; /* Tamanho da fonte (opcional) */
     margin-top: 10px; /* Espaçamento acima (opcional) */

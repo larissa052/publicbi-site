@@ -48,6 +48,7 @@ header img {
 .sobre-item h3 {
     margin-top: 0;
     color: #003366;
+    margin-bottom: 10px; /* Espaçamento abaixo do subtítulo */
 }
 
 .sobre-item p, .sobre-item ul {
@@ -104,8 +105,27 @@ h2 {
     font-size: 32px;
     font-weight: 700;
     color: #003366;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 30px; /* Espaçamento abaixo do título */
+}
+
+/* Espaçamento para parágrafos */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px; /* Espaçamento abaixo de parágrafos */
+}
+
+/* Espaçamento para listas */
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px; /* Espaçamento abaixo da lista */
+}
+
+ul li {
+    margin-bottom: 15px; /* Espaçamento entre itens da lista */
 }
 
 /* Seção de Contato */

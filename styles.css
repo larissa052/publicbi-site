@@ -30,7 +30,12 @@ header img {
     width: 150px;
     height: auto;
 }
-
+/* Estilo para o slogan */
+.slogan {
+    color: white; /* Cor branca para o texto */
+    font-size: 18px; /* Tamanho da fonte (opcional) */
+    margin-top: 10px; /* Espaçamento acima (opcional) */
+}
 /* Estilo para os itens da seção Sobre */
 .sobre-item {
     display: flex;

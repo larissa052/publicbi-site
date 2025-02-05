@@ -6,16 +6,18 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Cabeçalho com azul escuro */
 header {
-    background-color: #0077b6;
+    background-color: #003366;
     color: white;
     padding: 20px;
 }
 
+/* Menu de navegação */
 nav ul {
     list-style: none;
     padding: 0;
-    background: #005f8e;
+    background: #002244;
 }
 
 nav ul li {
@@ -32,21 +34,39 @@ nav a {
 
 /* Efeito hover nos links do menu */
 nav a:hover {
-    color: #ffd700; /* Cor dourada ao passar o mouse */
+    color: #ffd700; /* Dourado ao passar o mouse */
 }
 
 /* Melhorando o espaçamento entre as seções */
 section {
-    margin: 30px auto; /* Mais espaçamento entre seções */
-    padding: 30px; /* Mais espaço interno para melhor leitura */
-    max-width: 800px; /* Mantém um limite de largura para melhor legibilidade */
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 800px;
     background: white;
     border-radius: 8px;
 }
 
+/* Botão estilizado */
+button {
+    background-color: #0077b6; /* Azul vibrante */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Efeito hover no botão */
+button:hover {
+    background-color: #005f8e; /* Azul mais escuro no hover */
+}
+
 /* Rodapé */
 footer {
-    background: #005f8e;
+    background: #002244;
     color: white;
     padding: 10px;
 }
@@ -58,17 +78,17 @@ footer {
     }
 
     nav ul li {
-        display: block; /* Transforma os itens do menu em blocos para melhor visualização */
+        display: block;
         margin: 10px 0;
     }
 
     header h1 {
-        font-size: 24px; /* Reduz o tamanho do título no cabeçalho */
+        font-size: 24px;
     }
 
     section {
-        padding: 15px; /* Reduz o padding interno */
-        margin: 15px; /* Reduz a margem externa */
-        width: 90%; /* Garante que as seções ocupem quase toda a tela */
+        padding: 15px;
+        margin: 15px;
+        width: 90%;
     }
 }

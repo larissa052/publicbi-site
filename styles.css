@@ -32,7 +32,6 @@ header img {
     margin: 0 auto 10px;
     width: 150px;
     height: auto;
-    margin-bottom: 10px;
 }
 
 /* Estilo para os itens da seção Sobre */
@@ -67,6 +66,7 @@ header img {
 .sobre-item ul li {
     margin-bottom: 10px; /* Espaçamento entre itens da lista */
 }
+
 /* Menu de navegação */
 nav {
     position: fixed; /* Fixa o menu no topo */
@@ -75,53 +75,6 @@ nav {
     z-index: 1000; /* Garante que o menu fique acima de outros elementos */
     background: #002244; /* Cor de fundo do menu */
     padding: 10px 0; /* Adiciona um pouco de espaço interno */
-}
-
-/* Ajuste no padding do header para evitar sobreposição */
-header {
-    padding-top: 80px; /* Adiciona espaço no topo para o menu fixo */
-    background-color: #003366;
-    color: white;
-    text-align: center;
-}
-
-/* Estilização da logo */
-header img {
-    display: block;
-    margin: 0 auto 10px;
-    width: 150px;
-    height: auto;
-}
-
-/* Melhorando o espaçamento entre as seções */
-section {
-    margin: 30px auto;
-    padding: 30px;
-    max-width: 800px;
-    background: white;
-    border-radius: 8px;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0; /* Remove margens padrão */
-}
-
-nav ul li {
-    display: inline;
-    margin: 10px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
-
-/* Efeito hover nos links do menu */
-nav a:hover {
-    color: #ffd700;
 }
 
 /* Melhorando o espaçamento entre as seções */

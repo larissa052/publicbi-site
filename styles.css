@@ -18,12 +18,11 @@
     color: white; /* Mantém o texto branco */
 }
 
-
 /* Cabeçalho */
 header {
     background-color: #003366;
     color: white;
-    padding: 20px;
+    padding: 80px 20px 20px; /* Ajuste no padding-top para o menu fixo */
     text-align: center;
 }
 
@@ -44,14 +43,11 @@ nav {
     z-index: 1000; /* Garante que o menu fique acima de outros elementos */
     background: #002244; /* Cor de fundo do menu */
 }
-/* Ajuste no padding do header para evitar sobreposição */
-header {
-    padding-top: 80px; /* Adiciona espaço no topo para o menu fixo */
-}
+
 nav ul {
     list-style: none;
     padding: 0;
-    background: #002244;
+    margin: 0; /* Remove margens padrão */
 }
 
 nav ul li {

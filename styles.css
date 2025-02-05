@@ -35,7 +35,38 @@ header img {
     margin-bottom: 10px;
 }
 
-/* Menu de navegação */
+/* Estilo para os itens da seção Sobre */
+.sobre-item {
+    display: flex;
+    align-items: flex-start; /* Alinha ícone e texto no topo */
+    margin-bottom: 30px; /* Espaçamento entre os itens */
+}
+
+.sobre-item i {
+    font-size: 32px; /* Tamanho do ícone */
+    color: #0077b6; /* Cor do ícone */
+    margin-right: 20px; /* Espaçamento entre ícone e texto */
+    flex-shrink: 0; /* Impede que o ícone diminua */
+}
+
+.sobre-item h3 {
+    margin-top: 0; /* Remove margem superior do título */
+    color: #003366; /* Cor do título */
+}
+
+.sobre-item p, .sobre-item ul {
+    margin: 10px 0 0; /* Ajusta margens do texto */
+    color: #333; /* Cor do texto */
+}
+
+.sobre-item ul {
+    list-style: none; /* Remove marcadores padrão */
+    padding-left: 0; /* Remove padding da lista */
+}
+
+.sobre-item ul li {
+    margin-bottom: 10px; /* Espaçamento entre itens da lista */
+}
 /* Menu de navegação */
 nav {
     position: fixed; /* Fixa o menu no topo */

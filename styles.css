@@ -153,7 +153,9 @@ form input:focus, form textarea:focus {
 footer {
     background: #002244;
     color: white;
-    padding: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px; /* Espaçamento acima do rodapé */
 }
 
 /* Responsividade para telas menores que 768px */
@@ -174,18 +176,33 @@ footer {
     header img {
         width: 100px;
     }
-
     section {
-        margin-bottom: 60px; /* Espaçamento maior entre seções */
-        padding: 40px; /* Espaçamento interno */
-        background: white; /* Fundo branco para destacar as seções */
-        border-radius: 8px; /* Bordas arredondadas */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-        margin: 15px;
-        width: 90%;
+        padding: 20px; /* Reduz o padding em telas menores */
+        margin-bottom: 40px; /* Reduz o espaçamento entre seções */
     }
 
-    #servicos ul li {
-        margin-bottom: 20px;
+    h2 {
+        font-size: 28px; /* Reduz o tamanho do título */
+        margin-bottom: 20px; /* Reduz o espaçamento abaixo do título */
+    }
+
+    p {
+        font-size: 16px; /* Reduz o tamanho da fonte */
+        margin-bottom: 15px; /* Reduz o espaçamento abaixo de parágrafos */
+    }
+
+    ul li {
+        margin-bottom: 10px; /* Reduz o espaçamento entre itens da lista */
+    }
+
+    .sobre-item {
+        margin-bottom: 20px; /* Reduz o espaçamento entre itens */
+    }
+
+    form input, form textarea {
+        margin-bottom: 15px; /* Reduz o espaçamento abaixo dos campos */
     }
 }
+
+  
+

@@ -156,7 +156,11 @@ footer {
     }
 
     section {
-        padding: 15px;
+        margin-bottom: 60px; /* Espaçamento maior entre seções */
+        padding: 40px; /* Espaçamento interno */
+        background: white; /* Fundo branco para destacar as seções */
+        border-radius: 8px; /* Bordas arredondadas */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
         margin: 15px;
         width: 90%;
     }

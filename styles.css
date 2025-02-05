@@ -1,62 +1,8 @@
-/* Menu de navegação fixo */
-.fixed-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #002244;
-    padding: 10px 0;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
-
-.fixed-nav ul {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-
-.fixed-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.fixed-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
-
-.fixed-nav a:hover {
-    color: #ffd700;
-}
-
-/* Cabeçalho */
-header {
-    background-color: #003366;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    position: relative; /* Mantém o cabeçalho fixo no layout */
-    z-index: 900; /* Para garantir que fique acima do conteúdo */
-}
-
-/* Estilização da logo */
-header img {
-    display: block;
-    margin: 0 auto 10px;
-    width: 150px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-/* Botão CTA dentro do header */
+/* Estilo para a chamada para ação (CTA) */
 .cta-button {
     display: inline-block;
-    background-color: #0077b6;
-    color: white;
+    background-color: #0077b6; /* Azul principal */
+    color: white; /* Texto branco para contraste */
     padding: 12px 25px;
     text-decoration: none;
     border-radius: 5px;
@@ -68,15 +14,115 @@ header img {
 
 /* Efeito hover no CTA */
 .cta-button:hover {
-    background-color: #005f8e;
-    color: white;
+    background-color: #005f8e; /* Azul mais escuro no hover */
+    color: white; /* Mantém o texto branco */
 }
 
-/* Ajuste no conteúdo para evitar sobreposição */
+
+/* Cabeçalho */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilização da logo */
+header img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Menu de navegação */
+nav {
+    position: fixed; /* Fixa o menu no topo */
+    top: 0; /* Alinha o menu no topo da página */
+    width: 100%; /* Ocupa toda a largura da tela */
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+    background: #002244; /* Cor de fundo do menu */
+}
+/* Ajuste no padding do header para evitar sobreposição */
+header {
+    padding-top: 80px; /* Adiciona espaço no topo para o menu fixo */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    background: #002244;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Efeito hover nos links do menu */
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Melhorando o espaçamento entre as seções */
 section {
-    margin: 80px auto 30px; /* O primeiro valor aumenta para evitar sobreposição com o menu fixo */
+    margin: 30px auto;
     padding: 30px;
     max-width: 800px;
     background: white;
     border-radius: 8px;
+}
+
+/* Botão do formulário */
+button {
+    background-color: #0077b6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Efeito hover no botão */
+button:hover {
+    background-color: #005f8e;
+}
+
+/* Rodapé */
+footer {
+    background: #002244;
+    color: white;
+    padding: 10px;
+}
+
+/* 📱 Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    section {
+        padding: 15px;
+        margin: 15px;
+        width: 90%;
+    }
 }

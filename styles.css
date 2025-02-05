@@ -1,21 +1,29 @@
-/* ====== ESTILO GERAL ====== */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #f4f4f4;
+/* Estilo para a chamada para ação (CTA) */
+.cta-button, form button {
+    display: inline-block;
+    background-color: #0077b6;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 15px;
 }
 
-/* ====== CABEÇALHO ====== */
+.cta-button:hover, form button:hover {
+    background-color: #005f8e;
+}
+
+/* Cabeçalho */
 header {
     background-color: #003366;
     color: white;
-    padding: 20px;
+    padding: 80px 20px 20px;
     text-align: center;
 }
 
-/* Estilização da logo */
 header img {
     display: block;
     margin: 0 auto 10px;
@@ -23,7 +31,40 @@ header img {
     height: auto;
 }
 
-/* ====== MENU DE NAVEGAÇÃO FIXO ====== */
+/* Estilo para os itens da seção Sobre */
+.sobre-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.sobre-item i {
+    font-size: 32px;
+    color: #0077b6;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.sobre-item h3 {
+    margin-top: 0;
+    color: #003366;
+}
+
+.sobre-item p, .sobre-item ul {
+    margin: 10px 0 0;
+    color: #333;
+}
+
+.sobre-item ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sobre-item ul li {
+    margin-bottom: 10px;
+}
+
+/* Menu de navegação fixo no topo */
 nav {
     position: fixed;
     top: 0;
@@ -58,90 +99,38 @@ nav a:hover {
     color: #ffd700;
 }
 
-/* ====== SEÇÃO DE CONTATO ====== */
+/* Seção de Contato */
 #contato {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 30px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilização do formulário */
 form {
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
-/* Estilo dos Labels */
-form label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    text-align: left;
-    color: #003366;
-    width: 100%;
-}
-
-/* Campos do Formulário */
 form input, form textarea {
-    width: 100%;
     padding: 12px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
     transition: 0.3s ease-in-out;
 }
 
-/* Efeito ao focar nos campos */
 form input:focus, form textarea:focus {
     border-color: #0077b6;
     box-shadow: 0px 0px 5px rgba(0, 119, 182, 0.5);
-    outline: none;
 }
 
-/* Botão do Formulário */
-form button {
-    background-color: #0077b6;
+/* Rodapé */
+footer {
+    background: #002244;
     color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out, transform 0.2s;
+    padding: 10px;
 }
 
-/* Efeito hover e clique no botão */
-form button:hover {
-    background-color: #005f8e;
-}
-
-form button:active {
-    transform: scale(0.98);
-}
-
-/* ====== DESIGN RESPONSIVO ====== */
-
-/* Tablets e telas médias */
-@media (max-width: 1024px) {
-    section {
-        max-width: 90%;
-        padding: 20px;
-    }
-}
-
-/* Celulares e telas pequenas */
+/* Responsividade para telas menores que 768px */
 @media (max-width: 768px) {
-    /* Ajusta o menu para telas menores */
     nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding: 0;
     }
 
     nav ul li {
@@ -149,71 +138,21 @@ form button:active {
         margin: 10px 0;
     }
 
-    /* Redimensiona a logo */
+    header h1 {
+        font-size: 24px;
+    }
+
     header img {
-        width: 120px;
-    }
-
-    /* Redimensiona o título */
-    header h1 {
-        font-size: 22px;
-    }
-
-    /* Ajusta os botões */
-    .cta-button {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-
-    /* Ajusta a seção de contato */
-    #contato {
-        max-width: 90%;
-        padding: 20px;
-    }
-
-    /* Ajusta o formulário para melhor preenchimento */
-    form input, form textarea {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    form button {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-}
-
-/* Telas muito pequenas */
-@media (max-width: 480px) {
-    header {
-        padding: 10px;
-    }
-
-    header h1 {
-        font-size: 18px;
-    }
-
-    .cta-button {
-        font-size: 14px;
-        padding: 8px 15px;
-    }
-
-    nav ul {
-        padding: 10px;
+        width: 100px;
     }
 
     section {
         padding: 15px;
-        margin: 10px;
-        width: 95%;
+        margin: 15px;
+        width: 90%;
     }
 
-    form input, form textarea {
-        font-size: 14px;
-    }
-
-    form button {
-        font-size: 14px;
-        padding: 8px 15px;
+    #servicos ul li {
+        margin-bottom: 20px;
     }
 }

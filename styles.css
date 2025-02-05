@@ -29,9 +29,8 @@ header {
 
 /* Estilização da logo */
 header img {
-    width: 150px; /* Largura da logo */
-    height: auto; /* Mantém a proporção */
-    margin-bottom: 10px; /* Espaçamento abaixo da logo */
+    display: block;
+    margin: 0 auto 10px;
 }
 
 /* Menu de navegação */

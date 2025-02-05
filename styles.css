@@ -33,7 +33,50 @@
     color: #ffd700;
 }
 
-/* Ajuste no body para não sobrepor o conteúdo */
-body {
-    padding-top: 50px; /* Para evitar que o menu fixe sobre o conteúdo */
+/* Cabeçalho */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Mantém o cabeçalho fixo no layout */
+    z-index: 900; /* Para garantir que fique acima do conteúdo */
+}
+
+/* Estilização da logo */
+header img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Botão CTA dentro do header */
+.cta-button {
+    display: inline-block;
+    background-color: #0077b6;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+/* Efeito hover no CTA */
+.cta-button:hover {
+    background-color: #005f8e;
+    color: white;
+}
+
+/* Ajuste no conteúdo para evitar sobreposição */
+section {
+    margin: 80px auto 30px; /* O primeiro valor aumenta para evitar sobreposição com o menu fixo */
+    padding: 30px;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
 }

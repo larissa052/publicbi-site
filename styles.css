@@ -89,6 +89,8 @@ header p.slogan {
 }
 
 #servicos ul li {
+    background-color: #f9f9f9; /* Fundo claro para cada item */
+    padding: 15px; /* Espaçamento interno */
     font-size: 20px; /* Aumenta o tamanho da fonte */
     line-height: 1.8; /* Aumenta o espaçamento entre as linhas */
     margin-bottom: 20px; /* Aumenta o espaçamento entre os itens */
@@ -101,7 +103,6 @@ header p.slogan {
 }
 
 #servicos ul li i {
-    background-color: #f9f9f9; /* Fundo claro para cada item */
     font-size: 28px; /* Aumenta o tamanho dos ícones */
     margin-right: 15px; /* Espaçamento entre o ícone e o texto */
     color: #0077b6; /* Cor dos ícones */

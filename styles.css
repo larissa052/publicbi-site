@@ -96,6 +96,9 @@ header p.slogan {
     margin-bottom: 20px; /* Aumenta o espaçamento entre os itens */
     display: flex;
     align-items: center; /* Alinha ícone e texto verticalmente */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de hover */
 }
 
 #servicos ul li strong {

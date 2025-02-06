@@ -167,9 +167,8 @@ ul li {
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #ffd700; /* Cor dourada para o título */
+    color: #ffffff; /* Branco para o título */
 }
-
 /* Estilo para o telefone/WhatsApp */
 .contato-rapido {
     margin-top: 20px;
@@ -177,8 +176,12 @@ ul li {
     font-weight: bold;
 }
 
+.contato-rapido p {
+    color: #ffffff; /* Texto branco para a frase acima do telefone */
+}
+
 .contato-rapido a {
-    color: #ffd700; /* Cor dourada para o link */
+    color: #00ff7f; /* Verde para o link do telefone */
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
@@ -186,7 +189,6 @@ ul li {
 .contato-rapido a:hover {
     color: #ffffff; /* Cor branca ao passar o mouse */
 }
-
 /* Estilo do formulário */
 form {
     display: flex;

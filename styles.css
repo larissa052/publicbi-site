@@ -50,10 +50,25 @@ header {
     display: block;
     margin: 0 auto 15px; /* Centraliza e adiciona espaço abaixo */
 }
+.logo-container {
+    background-color: white; /* Fundo branco */
+    padding: 10px; /* Espaçamento interno ao redor da logo */
+    border-radius: 10px; /* Bordas arredondadas */
+    display: inline-block; /* Faz o container se ajustar ao tamanho da logo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar destaque */
+    border: 2px solid #0077b6; /* Borda azul */
+}
+
+header {
+    background-color: #003366; /* Cor de fundo do header */
+    color: white;
+    padding: 60px 20px 20px; /* Ajuste o padding conforme necessário */
+    text-align: center;
+}
 /* Estilo para o slogan */
 header p.slogan {
     color: white; /* Cor branca para o texto */
-    font-size: 25px; /* Tamanho da fonte (opcional) */
+    font-size: 20px; /* Tamanho da fonte (opcional) */
     margin-top: 10px; /* Espaçamento acima (opcional) */
 }
 /* Estilo para os itens da seção Sobre */

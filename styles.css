@@ -311,9 +311,9 @@ section {
         margin-bottom: 15px;
     }
 h2 i {
-    margin-right: 10px; /* Espaço entre o ícone e o texto */
-    font-size: 28px; /* Aumenta o tamanho do ícone */
-    vertical-align: middle; /* Alinha o ícone corretamente */
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    font-size: 1.2em; /* Tamanho do ícone */
+    color: #0077b6; /* Cor do ícone */
 }
 }
 

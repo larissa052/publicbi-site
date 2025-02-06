@@ -195,6 +195,9 @@ footer {
     text-align: center;
     margin-top: 60px;
 }
+footer p {
+    color: white !important; /* Força a cor branca */
+}
 /* Espaçamento geral para seções */
 section {
     padding: 40px; /* Aumenta o padding interno */

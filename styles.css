@@ -37,38 +37,45 @@ header p.slogan {
     margin-top: 10px; /* Espaçamento acima (opcional) */
 }
 /* Estilo para os itens da seção Sobre */
-.sobre-item {
+/* ====== Estilo da Seção "Sobre" reformulada ====== */
+.sobre-container {
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
 }
 
-.sobre-item i {
-    font-size: 32px;
+/* Estilo dos cards */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Ícones grandes */
+.card i {
+    font-size: 40px;
     color: #0077b6;
-    margin-right: 20px;
-    flex-shrink: 0;
+    margin-bottom: 15px;
 }
 
-.sobre-item h3 {
-    margin-top: 0;
+/* Títulos dentro dos cards */
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
     color: #003366;
-    margin-bottom: 10px;
 }
 
-.sobre-item p, .sobre-item ul {
-    margin: 10px 0 0;
-    color: #333;
+/* Efeito hover nos cards */
+.card:hover {
+    transform: translateY(-5px);
 }
 
-.sobre-item ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.sobre-item ul li {
-    margin-bottom: 10px;
-}
 
 /* Menu de navegação fixo no topo */
 nav {
@@ -210,6 +217,14 @@ section {
 }
 /* Responsividade para telas menores que 768px */
 @media (max-width: 768px) {
+    .sobre-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
     nav ul {
         padding: 0;
     }

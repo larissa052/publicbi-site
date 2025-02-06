@@ -35,6 +35,20 @@ header img {
     width: 150px;
     height: auto;
 }
+/* ====== Estilização da Logo ====== */
+header {
+    background-color: #003366; /* Fundo azul escuro */
+    text-align: center;
+    padding: 30px;
+}
+
+/* Ajustando a logo */
+.logo {
+    max-width: 200px; /* Garante que a logo tenha um tamanho adequado */
+    height: auto;
+    display: block;
+    margin: 0 auto 15px; /* Centraliza e adiciona espaço abaixo */
+}
 /* Estilo para o slogan */
 header p.slogan {
     color: white; /* Cor branca para o texto */

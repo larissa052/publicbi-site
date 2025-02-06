@@ -82,7 +82,29 @@ header p.slogan {
     transform: translateY(-5px);
 }
 
+/* Estilo para a lista de serviços */
+#servicos ul {
+    list-style: none;
+    padding-left: 0;
+}
 
+#servicos ul li {
+    font-size: 20px; /* Aumenta o tamanho da fonte */
+    line-height: 1.8; /* Aumenta o espaçamento entre as linhas */
+    margin-bottom: 20px; /* Aumenta o espaçamento entre os itens */
+    display: flex;
+    align-items: center; /* Alinha ícone e texto verticalmente */
+}
+
+#servicos ul li strong {
+    font-size: 24px; /* Aumenta o tamanho da fonte dos títulos */
+}
+
+#servicos ul li i {
+    font-size: 28px; /* Aumenta o tamanho dos ícones */
+    margin-right: 15px; /* Espaçamento entre o ícone e o texto */
+    color: #0077b6; /* Cor dos ícones */
+}
 /* Menu de navegação fixo no topo */
 nav {
     position: fixed;

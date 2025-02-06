@@ -193,7 +193,7 @@ footer {
 /* Espaçamento geral para seções */
 section {
     padding: 40px; /* Aumenta o padding interno */
-    margin-bottom: 65px; /* Aumenta o espaçamento entre seções */
+    margin-bottom: 80px; /* Aumenta o espaçamento entre seções */
     background: white; /* Fundo branco para destacar as seções */
     border-radius: 8px; /* Bordas arredondadas */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */

@@ -37,23 +37,22 @@ header p.slogan {
     margin-top: 10px; /* Espaçamento acima (opcional) */
 }
 /* Estilo para os itens da seção Sobre */
-/* ====== Estilo da Seção "Sobre" reformulada ====== */
 .sobre-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 12px;
     margin-top: 30px;
 }
 
 /* Estilo dos cards */
 .card {
     background: white;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 22%;
+    width: calc(33.33% - 20px); /* Ajuste para 33.33% com margem */;
     transition: transform 0.3s ease-in-out;
 }
 

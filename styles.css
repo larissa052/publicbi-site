@@ -190,7 +190,14 @@ footer {
     text-align: center;
     margin-top: 60px;
 }
-
+/* Espaçamento geral para seções */
+section {
+    padding: 40px; /* Aumenta o padding interno */
+    margin-bottom: 60px; /* Aumenta o espaçamento entre seções */
+    background: white; /* Fundo branco para destacar as seções */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
 /* Responsividade para telas menores que 768px */
 @media (max-width: 768px) {
     nav ul {
@@ -211,11 +218,8 @@ footer {
     }
 
     section {
-        padding: 40px; /* Aumenta o padding interno */
-        margin-bottom: 60px; /* Aumenta o espaçamento entre seções */
-        background: white; /* Fundo branco para destacar as seções */
-        border-radius: 8px; /* Bordas arredondadas */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        padding: 20px; /* Reduz o padding em telas menores */
+        margin-bottom: 40px; /* Reduz o espaçamento entre seções */
     }
 
     h2 {

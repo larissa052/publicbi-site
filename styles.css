@@ -310,4 +310,10 @@ section {
     form input, form textarea {
         margin-bottom: 15px;
     }
+h2 i {
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+    font-size: 28px; /* Aumenta o tamanho do ícone */
+    vertical-align: middle; /* Alinha o ícone corretamente */
 }
+}
+

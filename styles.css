@@ -218,8 +218,8 @@ section {
     }
 
     section {
-        padding: 20px; /* Reduz o padding em telas menores */
-        margin-bottom: 50px; /* Reduz o espaçamento entre seções */
+        padding: 25px; /* Ajuste leve no padding */
+        margin-bottom: 55px; /* Mantém um bom espaçamento entre seções */
     }
 
     h2 {

@@ -190,13 +190,15 @@ form button:hover {
 /* Rodapé */
 footer {
     background: #002244;
-    color: white !important;;
     padding: 40px 20px;
     text-align: center;
     margin-top: 60px;
 }
-footer p {
+
+/* Garante que TODO o texto do rodapé fique branco */
+footer p, footer span, footer a {
     color: white !important; /* Força a cor branca */
+    font-size: 16px;
 }
 /* Espaçamento geral para seções */
 section {

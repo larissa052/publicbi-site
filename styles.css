@@ -101,6 +101,7 @@ header p.slogan {
 }
 
 #servicos ul li i {
+    background-color: #f9f9f9; /* Fundo claro para cada item */
     font-size: 28px; /* Aumenta o tamanho dos ícones */
     margin-right: 15px; /* Espaçamento entre o ícone e o texto */
     color: #0077b6; /* Cor dos ícones */

@@ -32,7 +32,7 @@ header {
 
 /* Estilização da logo */
 .logo-container {
-    background-color: rgba(255, 255, 255, 0.5); /* Fundo branco com 55% de transparência */
+    background-color: rgba(255, 255, 255, 0.05); /* Fundo branco com 5% de transparência */
     padding: 3px; /* Reduzimos ainda mais o espaçamento interno */
     border-radius: 10px; /* Bordas arredondadas */
     display: inline-block; /* Faz o container se ajustar ao tamanho da logo */

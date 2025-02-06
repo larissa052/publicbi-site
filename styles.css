@@ -110,6 +110,10 @@ header p.slogan {
     margin-right: 15px; /* Espaçamento entre o ícone e o texto */
     color: #0077b6; /* Cor dos ícones */
 }
+#servicos ul li:hover {
+    transform: translateY(-5px); /* Efeito de levantar ao passar o mouse */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+}
 /* Menu de navegação fixo no topo */
 nav {
     position: fixed;

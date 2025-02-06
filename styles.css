@@ -152,30 +152,63 @@ ul li {
 }
 
 /* Seção de Contato */
+/* Estilo da seção de contato */
 #contato {
+    background-color: #002244; /* Fundo escuro */
+    color: white; /* Texto branco para contraste */
+    padding: 60px 20px; /* Aumenta o padding para mais destaque */
     text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
 }
 
+/* Título impactante */
+#contato h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffd700; /* Cor dourada para o título */
+}
+
+/* Estilo para o telefone/WhatsApp */
+.contato-rapido {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contato-rapido a {
+    color: #ffd700; /* Cor dourada para o link */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.contato-rapido a:hover {
+    color: #ffffff; /* Cor branca ao passar o mouse */
+}
+
+/* Estilo do formulário */
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 form label {
     margin-bottom: 10px;
     font-weight: bold;
-    color: #002244;
+    color: white; /* Texto branco para os labels */
 }
 
 form input, form textarea {
     width: 100%;
-    max-width: 500px;
     padding: 12px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #f9f9f9; /* Fundo claro para os campos */
     transition: border-color 0.3s ease-in-out;
 }
 
@@ -199,7 +232,6 @@ form button {
 form button:hover {
     background-color: #005f8e;
 }
-
 /* Rodapé */
 footer {
     background: #002244;

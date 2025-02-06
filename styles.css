@@ -43,6 +43,8 @@ header p.slogan {
     flex-wrap: wrap;
     gap: 12px;
     margin-top: 30px;
+    width: 100%; /* Garante que o contêiner ocupe 100% da largura */
+    padding: 0;
 }
 
 /* Estilo dos cards */
@@ -52,7 +54,7 @@ header p.slogan {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 25%; 
+    width: calc(33.33% - 20px); /* Ajuste para 33.33% com margem */ 
     transition: transform 0.3s ease-in-out;
 }
 

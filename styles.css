@@ -24,6 +24,7 @@
 /* Cabeçalho */
 header {
     background-color: #001f3f;
+    background: linear-gradient(135deg, #0077b6, #003366);
     color: white;
     padding: 85px 20px 20px;
     text-align: center;

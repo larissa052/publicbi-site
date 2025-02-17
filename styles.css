@@ -41,7 +41,7 @@ header {
 }
 
 .logo {
-    max-width: 255px; /* Garante que a logo tenha um tamanho adequado */
+    max-width: 250px; /* Garante que a logo tenha um tamanho adequado */
     height: auto;
     display: block;
     margin: 0 auto 15px; /* Centraliza e adiciona espaço abaixo */
